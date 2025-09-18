@@ -132,7 +132,7 @@ p{
 
 .box-container .box{
     display: grid;
-    height: 300px;
+    height: 400px;
     width: 270px;
     background: #4b4c58; 
     text-align: center;
@@ -161,6 +161,10 @@ p{
 .box-container .box p{
     padding: 0 15px;
     font-size: 16px;
+    text-align: center;
+    color:#ffffff;
+    justify-content: center;
+    display: flex;          /* para organizar varios .box en fila */
 
 }
 
@@ -184,6 +188,7 @@ p{
     display: flex;
     justify-content: center;
     padding-top:50px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
@@ -206,16 +211,23 @@ p{
     font-size: 20px;
     color: #e91e63;
     padding-top: 10px;
+
 }
 
 
 .box-container2 .box p{
 
     font-size: 18px;
-    color:#fff;
+    color:#ffffff;
     padding: 0;
-
+    display: flex;          /* para organizar varios .box en fila */
+    flex-wrap: wrap;        /* si no caben, saltan a la siguiente línea */
+    gap: 20px;              /* espacio entre bloques */
+    justify-content: center;
 }
+
+
+
 
 .contact{
     padding: 50px 0;
